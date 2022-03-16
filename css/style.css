@@ -1,0 +1,114 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background-color:brown;
+}
+main
+{
+    width: 100%;
+    height:auto;
+    background:url('../img/fondo.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+main .container__cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container__cards .card__contain
+{  
+    justify-content:center;
+    position: relative;
+    width: fit-content;
+    min-width: 300px;
+    height: auto;
+    padding:1.2rem;
+    background-color:rgb(73, 62, 231);
+    margin: 2rem;
+    color:#fff;
+    border-radius:15px;
+    border: 3px solid rgb(1, 162, 255);
+    box-shadow: 0px 0px 3px rgb(255, 13, 255),
+    1px 1px 4px rgb(143, 9, 252),
+    2px 2px 5px rgb(181, 0, 253);
+    z-index:1;
+}
+
+main .container__cards .card__contain h3
+{
+    font-size:2.8rem;
+    font-weight:900;
+    text-shadow: 1px 1px 3px #000,
+    2px 2px 3px #000,
+    3px 3px 3px #000;
+}
+main .container__cards .card__contain p
+{
+    margin:1rem 0;
+    font-size:1.3rem;
+    font-weight:600;
+    text-shadow: 1px 1px 2px rgb(204, 0, 245);
+}
+main .container__cards .card__contain .card-item-1
+{
+    position:absolute;
+    display:inline-block;
+    width: 230px;
+    height: 160px; 
+    background:url('../img/logo.png') center/contain no-repeat;
+    bottom: -50px;
+    left: calc(50% + 85px);
+
+}
+
+main .container__cards .card__contain .card-item-2
+{
+    display:inline-block;
+    width:100%;
+    min-width: 100px;
+    height: 200px;
+    background:url('../img/irelia.png') center/contain no-repeat;
+    z-index: 9 !important;
+ }
+ main .container__cards .card__contain .card-item-2:active
+ {
+     transform: scale(300%);
+     z-index: 5;
+ }
+ @media (max-width:630px)
+ {
+    main .container__cards .card__contain .card-item-1
+    {
+        width: 120px;
+        height: 180px;
+        bottom: calc(0% - 80px);
+        left: calc(50% + 80px);
+    } 
+ }
+ @media (max-width:400px)
+ {
+    main .container__cards .card__contain .card-item-1
+    {
+        width: 70px;
+        height: 90px;
+        bottom: -45px;
+        left: calc(50% + 100px);
+    }
+ }
+ 
